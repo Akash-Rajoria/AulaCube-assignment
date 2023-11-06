@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org" th:replace="base::Layout(~{::section})">
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+</head>
+<body>
+    <section>
+        <h2>Add Employee</h2>
+        <form action="/employeeManagement/saveEmployee" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="departmentId">Department ID:</label>
+            <input type="text" id="departmentId" name="departmentId" required><br>
+
+            
+
+            <button type="submit">Save Employee</button>
+        </form>
+    </section>
+</body>
+</html>

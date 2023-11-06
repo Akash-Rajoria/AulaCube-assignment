@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org" th:replace="base::Layout(~{::section})">
+<head>
+    <title>Remove Employee</title>
+</head>
+<body>
+    <h1>Remove Employee</h1>
+    <section>
+    <form action="/employeeManagement/removeEmployee" method="post">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="employeeId" required>
+        <button type="submit">Remove Employee</button>
+    </form>
+    </section>
+</body>
+</html>

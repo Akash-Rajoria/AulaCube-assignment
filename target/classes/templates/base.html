@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org" th:fragment="Layout(content)">
+<head>
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<meta charset="UTF-8">
+<title>Our Employees</title>
+</head>
+<body>
+	<header>
+        <h1>Employee Management System</h1>
+    </header>
+ 	<nav>
+        <a href="home">Home</a>
+        <a href="add">Add Employee</a>
+        <a href="allEmployee">View Employees</a>
+        <a href="remove">Remove Employees</a>
+        <a href="update">Update Employees Details</a>
+    </nav>
+    <br><br>
+    <center>
+     <div class="container" th:replace="${content}">
+        
+    </div>
+    </center>
+</body>
+</html>
